@@ -81,7 +81,7 @@ end
 
 def ending 
   puts "Secret Code - |_____|_____|_____|_____| \n\n".colorize(:color => :blue, :mode => :bold)
-  puts @computer_guess.each {|x| print x.colorize(:color => x.to_sym, :mode => :bold) + ' | '}
+  @computer_guess.each {|x| print x.colorize(:color => x.to_sym, :mode => :bold) + ' | '}
 end
 
 end
